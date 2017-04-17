@@ -1,0 +1,21 @@
+.wrapper{
+    max-width: 750px;
+    margin: 0 auto;
+}
+.tip{
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    max-width: 750px;
+    width: 100%;
+    height: 2rem;
+    box-sizing: border-box;
+    background-color: red;
+    color: #fff;
+}
+.box{
+    margin-top: 3rem;
+    background-color: blue;
+    height: 2.5rem;
+    color: #fff;
+}
