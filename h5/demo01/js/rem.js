@@ -6,7 +6,13 @@
             width && (docEle.style.fontSize = 20 * (width / 375) + "px");
         };
 
-    win.addEventListener(evt, fn, false);
-    doc.addEventListener("DOMContentLoaded", fn, false);
+    win.addEventListener(evt, function(){
+        fn();
+        setTimeout(fn,50);
+    }, false);
+    doc.addEventListener("DOMContentLoaded", function(){
+        fn();
+        setTimeout(fn,50);
+    }, false);
 
 }(document, window));
